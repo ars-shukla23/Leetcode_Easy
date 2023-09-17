@@ -7,11 +7,10 @@ public:
                 if((nums.at(i)+nums.at(j))==target && i!=j){
                     result.push_back(i);
                     result.push_back(j);
-                    goto resume;
+                    return result;
                 }
             }
         }
-        resume:
-        return result;
+      return result;
     }
 };
